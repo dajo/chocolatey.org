@@ -587,7 +587,7 @@ namespace NuGetGallery
         // this methods exist to make unit testing easier
         protected internal virtual IPackage ReadNuGetPackage(Stream stream)
         {
-            return new ZipPackage(stream);
+            return new ChocolateyPackage(stream);
         }
 
         private SearchFilter GetSearchFilter(string q, string sortOrder, int page, bool includePrerelease)

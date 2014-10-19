@@ -65,7 +65,12 @@ namespace NuGetGallery
         /// <remarks>
         /// Has a max length of 4000. Is not indexed and not used for searches. Db column is nvarchar(max).
         /// </remarks>
-        public string LicenseUrl { get; set; }
+        public string LicenseUrl { get; set; } 
+        
+        /// <remarks>
+        /// Has a max length of 4000. Is not indexed and not used for searches. Db column is nvarchar(max).
+        /// </remarks>
+        public string PackageRepositoryUrl { get; set; }
 
         [StringLength(20)]
         public string Language { get; set; }

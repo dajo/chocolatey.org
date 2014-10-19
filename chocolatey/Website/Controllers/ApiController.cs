@@ -206,7 +206,7 @@ namespace NuGetGallery
             else
                 stream = Request.InputStream;
 
-            return new ZipPackage(stream);
+            return new ChocolateyPackage(stream);
         }
 
         [ActionName("PackageIDs"), HttpGet]

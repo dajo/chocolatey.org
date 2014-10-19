@@ -286,6 +286,9 @@ namespace NuGetGallery
             package.Summary = nugetPackage.Summary ?? string.Empty;
             package.Tags = nugetPackage.Tags ?? string.Empty;
             package.Title = nugetPackage.Title ?? string.Empty;
+
+            //chocolatey specific properties
+            package.PackageRepositoryUrl = nugetPackage.PackageRepositoryUrl == null ? string.Empty : nugetPackage.PackageRepositoryUrl.ToString();
             
             foreach (var item in package.Authors.OrEmptyListIfNull().ToList()) packageAuthorRepo.DeleteOnCommit(item);
             packageAuthorRepo.CommitChanges();

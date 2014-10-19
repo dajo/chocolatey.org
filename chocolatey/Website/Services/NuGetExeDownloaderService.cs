@@ -55,7 +55,7 @@ namespace NuGetGallery
 
                 using (var packageStream = packageFileSvc.DownloadPackageFile(package))
                 {
-                    var zipPackage = new ZipPackage(packageStream);
+                    var zipPackage = new ChocolateyPackage(packageStream);
                     ExtractNuGetExe(zipPackage);
                 }
             }

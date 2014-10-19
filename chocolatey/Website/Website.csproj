@@ -202,6 +202,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\WebBackgrounder.EntityFramework.0.1\lib\net40\WebBackgrounder.EntityFramework.dll</HintPath>
     </Reference>
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\..\nugetgallery\Website\App_Start\AuthenticationModule.cs">
@@ -1106,6 +1107,7 @@
     <Compile Include="Controllers\PagesController.cs" />
     <Compile Include="Controllers\RssController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
+    <Compile Include="Entities\ChocolateyPackage.cs" />
     <Compile Include="Entities\EntitiesContext.cs" />
     <Compile Include="Entities\Package.cs" />
     <Compile Include="Entities\PackageFile.cs" />
