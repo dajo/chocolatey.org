@@ -599,9 +599,6 @@
     <Compile Include="..\..\nugetgallery\Website\Services\ISearchService.cs">
       <Link>Services\ISearchService.cs</Link>
     </Compile>
-    <Compile Include="..\..\nugetgallery\Website\Services\NuGetExeDownloaderService.cs">
-      <Link>Services\NuGetExeDownloaderService.cs</Link>
-    </Compile>
     <Compile Include="..\..\nugetgallery\Website\Services\PackageSearchResults.cs">
       <Link>Services\PackageSearchResults.cs</Link>
     </Compile>
@@ -1145,6 +1142,7 @@
     <Compile Include="Services\IMessageService.cs" />
     <Compile Include="Services\IUserSiteProfilesService.cs" />
     <Compile Include="Services\MessageService.cs" />
+    <Compile Include="Services\NuGetExeDownloaderService.cs" />
     <Compile Include="Services\PackageService.cs" />
     <Compile Include="Services\RssActionResult.cs" />
     <Compile Include="Services\UserSiteProfilesService.cs" />
